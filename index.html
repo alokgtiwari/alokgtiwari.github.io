@@ -1,1 +1,32 @@
-just a file
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Sayangku!
+    </title>
+    <style>
+        #blink {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="blink">
+        Let's blink!
+    </p>
+    <script type="text/javascript">
+        let blink =
+            document.getElementById('blink');
+
+        setInterval(function () {
+            blink.style.opacity =
+                (blink.style.opacity == 0 ? 1 : 0);
+        }, 1000); 
+    </script>
+</body>
+
+</html>
